@@ -6,9 +6,6 @@ namespace BAZE.Controllers
 {
     public class CadastroController : Controller
     {
-        //armazenando usuários em uma lista estática
-        private static List<Usuario> _users = new List<Usuario>();
-
         [HttpGet]
         public IActionResult Index()
         {
@@ -19,7 +16,7 @@ namespace BAZE.Controllers
         [HttpPost]
         public IActionResult Index(Usuario usuario)
         {
-            ViewData["msg"] = "Sucesso!";
+            ViewData["msg"] = "Usuário "+ usuario.Nome +" cadastrado com Sucesso!";
             return View(usuario);
         }
     }

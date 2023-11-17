@@ -3,14 +3,15 @@
 *@
 @{
 }
-<form action="/usuario/cadastro" method="post">
+<form action="/Login/Index" method="post">
     <div class="mb-3">
-        <label>Nome</label>
-        <input type="text" name="nome" class="form-control" />
+        <label>Nome de Usuário</label>
+        <input type="text" name="user" class="form-control" />
     </div>
     <div class="mb-3">
         <label>Senha</label>
-        <input type="text" name="dataNascimento" class="form-control" />
+        <input type="text" name="senha" class="form-control" />
     </div>
-    <button class="btn btn-primary">Cadastrar</button>
+    <botao texto="login"></botao><br />
+    <a asp-controller="Cadastro" asp-action="Index">Cadastre-se</a>
 </form>

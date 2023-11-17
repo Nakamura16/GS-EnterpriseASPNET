@@ -5,10 +5,7 @@
 
 @if (Model != null)
 {
-    <p>@ViewData["msg"]</p>
-    <p>
-        @Model?.Nome
-    </p>
+    <alert mensagem="@ViewData["msg"]"></alert>
 }
 else
 {
@@ -20,5 +17,5 @@ else
 
     <partial name="_FormCadastroUsuario" />
 
-    <churros texto="Cadastrar"></churros>
+    <Botao texto="Cadastrar"></Botao>
 </form>

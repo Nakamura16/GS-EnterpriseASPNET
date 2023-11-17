@@ -2,7 +2,7 @@
 
 namespace BAZE.TagHelpers
 {
-    public class ChurrosTagHelper : TagHelper
+    public class BotaoTagHelper : TagHelper
     {
         public string? Texto { get; set; }
         public override void Process(TagHelperContext context, TagHelperOutput output)
